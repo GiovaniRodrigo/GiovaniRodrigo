@@ -23,6 +23,8 @@
       --text-muted: #707070;
       --border: #3a3a3a;
       --border-light: #4a4a4a;
+      --success: #10b981;
+      --warning: #f59e0b;
     }
 
     @media (prefers-color-scheme: light) {
@@ -38,6 +40,8 @@
         --text-muted: #999;
         --border: #e5e3e0;
         --border-light: #d5d3d0;
+        --success: #059669;
+        --warning: #d97706;
       }
     }
 
@@ -53,6 +57,8 @@
       --text-muted: #999;
       --border: #e5e3e0;
       --border-light: #d5d3d0;
+      --success: #059669;
+      --warning: #d97706;
     }
 
     [data-theme="dark"] {
@@ -67,6 +73,8 @@
       --text-muted: #707070;
       --border: #3a3a3a;
       --border-light: #4a4a4a;
+      --success: #10b981;
+      --warning: #f59e0b;
     }
 
     html {
@@ -105,13 +113,16 @@
       padding: 0 2rem;
     }
 
-    /* Header with theme toggle */
+    /* Header */
     header {
       position: fixed;
       top: 0;
       right: 0;
       padding: 2rem;
       z-index: 100;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
     }
 
     .theme-toggle {
@@ -160,6 +171,21 @@
       transform: rotate(180deg);
     }
 
+    .github-stats {
+      font-size: 12px;
+      padding: 0.5rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+    }
+
+    .github-stats:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
     /* Scroll indicator */
     .scroll-indicator {
       position: fixed;
@@ -170,6 +196,168 @@
       width: 0%;
       z-index: 101;
       transition: width 0.1s ease;
+    }
+
+    /* Toast notifications */
+    .toast-container {
+      position: fixed;
+      top: 80px;
+      right: 2rem;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .toast {
+      padding: 1rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      animation: slideInRight 0.4s ease-out;
+      min-width: 300px;
+      font-size: 14px;
+    }
+
+    .toast.success {
+      border-left-color: var(--success);
+    }
+
+    .toast.error {
+      border-left-color: #ef4444;
+    }
+
+    .toast.warning {
+      border-left-color: var(--warning);
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal.active {
+      display: flex;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .modal-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 500px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      animation: slideUp 0.3s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.3s ease;
+    }
+
+    .modal-close:hover {
+      color: var(--primary);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 32px;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .modal-subtitle {
+      font-size: 14px;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-body {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .modal-btn {
+      flex: 1;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--primary);
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .modal-btn:hover {
+      background: var(--bg-surface);
+      border-color: var(--primary);
+    }
+
+    .modal-btn.primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .modal-btn.primary:hover {
+      opacity: 0.9;
     }
 
     /* Hero Section */
@@ -255,13 +443,21 @@
       animation: fadeInUp 0.8s ease-out;
     }
 
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
     .section-title {
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--primary);
-      margin-bottom: 2rem;
       position: relative;
       padding-bottom: 1rem;
     }
@@ -282,6 +478,36 @@
 
     .section.visible .section-title::after {
       transform: scaleX(1);
+    }
+
+    /* Filter buttons */
+    .filter-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
     }
 
     .doing-list {
@@ -378,6 +604,10 @@
     .project-card:nth-child(5) { animation-delay: 0.5s; }
     .project-card:nth-child(6) { animation-delay: 0.6s; }
 
+    .project-card.hidden {
+      display: none;
+    }
+
     .project-card::before {
       content: "";
       position: absolute;
@@ -453,6 +683,11 @@
       line-height: 1.7;
     }
 
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
     .project-link {
       font-size: 13px;
       color: var(--primary);
@@ -463,6 +698,11 @@
       gap: 0.5rem;
       transition: all 0.3s ease;
       position: relative;
+      flex: 1;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      justify-content: center;
     }
 
     .project-link::after {
@@ -472,13 +712,14 @@
 
     .project-link:hover {
       color: var(--accent);
+      border-color: var(--primary);
+      background: rgba(44, 90, 160, 0.05);
     }
 
     .project-link:hover::after {
       transform: translateX(4px);
     }
 
-    /* Ripple effect */
     .ripple {
       position: absolute;
       border-radius: 50%;
@@ -610,6 +851,15 @@
     }
 
     /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -643,6 +893,17 @@
       }
     }
 
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
     @keyframes scaleIn {
       from {
         opacity: 0;
@@ -666,6 +927,12 @@
     @media (max-width: 768px) {
       header {
         padding: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .github-stats {
+        display: none;
       }
 
       .hero {
@@ -681,6 +948,15 @@
         font-size: 16px;
       }
 
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .filter-buttons {
+        width: 100%;
+      }
+
       .projects-grid {
         grid-template-columns: 1fr;
       }
@@ -692,15 +968,49 @@
       .footer-links {
         gap: 1rem;
       }
+
+      .modal-content {
+        width: 95%;
+      }
+
+      .toast-container {
+        right: 1rem;
+        left: 1rem;
+      }
+
+      .toast {
+        min-width: auto;
+      }
     }
   </style>
 </head>
 <body>
   <div class="scroll-indicator" id="scrollIndicator"></div>
+  <div class="toast-container" id="toastContainer"></div>
 
   <header>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    <div class="github-stats" id="githubStats">Loading...</div>
   </header>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="modal-close" id="modalClose">&times;</span>
+      <div class="modal-header">
+        <span id="modalIcon">🐳</span>
+        <div>
+          <div class="modal-title" id="modalTitle">Project Title</div>
+          <div class="modal-subtitle" id="modalSubtitle">project_name</div>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody">Project description</div>
+      <div class="modal-buttons">
+        <a href="#" class="modal-btn primary" id="modalGithubBtn" target="_blank">Visit GitHub</a>
+        <button class="modal-btn" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <section class="hero">
@@ -727,68 +1037,11 @@
     </section>
 
     <section class="section" id="section-projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-icon">🐳</div>
-          <div class="project-content">
-            <div class="project-title">Dockerfile Generator</div>
-            <div class="project-subtitle">gerador_dockerfile_php</div>
-            <div class="project-desc">Python tool to generate customized Dockerfiles for PHP (versions 5.6–8.2). Simplifies container setup.</div>
-            <a href="https://github.com/GiovaniRodrigo/gerador_dockerfile_php" class="project-link">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">🔗</div>
-          <div class="project-content">
-            <div class="project-title">URL Shortener</div>
-            <div class="project-subtitle">shorter_url</div>
-            <div class="project-desc">Lightweight application for URL shortening and management.</div>
-            <a href="https://github.com/GiovaniRodrigo/shorter_url" class="project-link">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">🕷️</div>
-          <div class="project-content">
-            <div class="project-title">Web Scraping</div>
-            <div class="project-subtitle">web_scraping</div>
-            <div class="project-desc">Data extraction and analysis from web sources. Built for reliable scraping workflows.</div>
-            <a href="https://github.com/GiovaniRodrigo/web_scraping" class="project-link">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">☁️</div>
-          <div class="project-content">
-            <div class="project-title">Azure Automation</div>
-            <div class="project-subtitle">azure_tasks</div>
-            <div class="project-desc">Integration and automation tools for Azure platform. Task scheduling and cloud operations.</div>
-            <a href="https://github.com/GiovaniRodrigo/azure_tasks" class="project-link">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">🔐</div>
-          <div class="project-content">
-            <div class="project-title">Certificate Validation</div>
-            <div class="project-subtitle">validar_dependencias_token_certisign</div>
-            <div class="project-desc">C utility for validating Certisign token dependencies and certificate requirements.</div>
-            <a href="https://github.com/GiovaniRodrigo/validar_dependencias_token_certisign" class="project-link">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">🔧</div>
-          <div class="project-content">
-            <div class="project-title">Git Scripts</div>
-            <div class="project-subtitle">git-scripts</div>
-            <div class="project-desc">Shell/Bash utilities to optimize Git workflows. Automate common operations.</div>
-            <a href="https://github.com/GiovaniRodrigo/git-scripts" class="project-link">GitHub</a>
-          </div>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="filter-buttons" id="filterButtons"></div>
       </div>
+      <div class="projects-grid" id="projectsGrid"></div>
     </section>
 
     <section class="section" id="section-tech">
@@ -816,11 +1069,66 @@
   </div>
 
   <script>
-    // Theme toggle
+    // =====================
+    // PROJECTS DATA
+    // =====================
+    const projectsData = [
+      {
+        icon: '🐳',
+        title: 'Dockerfile Generator',
+        subtitle: 'gerador_dockerfile_php',
+        description: 'Python tool to generate customized Dockerfiles for PHP (versions 5.6–8.2). Simplifies container setup for different PHP stacks.',
+        github: 'https://github.com/GiovaniRodrigo/gerador_dockerfile_php',
+        tags: ['Python', 'Docker']
+      },
+      {
+        icon: '🔗',
+        title: 'URL Shortener',
+        subtitle: 'shorter_url',
+        description: 'Lightweight application for URL shortening and management. Fast, reliable, and easy to integrate.',
+        github: 'https://github.com/GiovaniRodrigo/shorter_url',
+        tags: ['JavaScript']
+      },
+      {
+        icon: '🕷️',
+        title: 'Web Scraping',
+        subtitle: 'web_scraping',
+        description: 'Data extraction and analysis from web sources. Built for reliable scraping workflows with error handling.',
+        github: 'https://github.com/GiovaniRodrigo/web_scraping',
+        tags: ['Python']
+      },
+      {
+        icon: '☁️',
+        title: 'Azure Automation',
+        subtitle: 'azure_tasks',
+        description: 'Integration and automation tools for Azure platform. Task scheduling and cloud operations made simple.',
+        github: 'https://github.com/GiovaniRodrigo/azure_tasks',
+        tags: ['Python', 'Azure']
+      },
+      {
+        icon: '🔐',
+        title: 'Certificate Validation',
+        subtitle: 'validar_dependencias_token_certisign',
+        description: 'C utility for validating Certisign token dependencies and certificate requirements. Security-focused.',
+        github: 'https://github.com/GiovaniRodrigo/validar_dependencias_token_certisign',
+        tags: ['C']
+      },
+      {
+        icon: '🔧',
+        title: 'Git Scripts',
+        subtitle: 'git-scripts',
+        description: 'Shell/Bash utilities to optimize Git workflows. Automate common operations and improve development speed.',
+        github: 'https://github.com/GiovaniRodrigo/git-scripts',
+        tags: ['Shell/Bash']
+      }
+    ];
+
+    // =====================
+    // THEME TOGGLE
+    // =====================
     const themeToggle = document.getElementById('themeToggle');
     const htmlElement = document.documentElement;
     
-    // Check for saved theme preference or default to dark
     const currentTheme = localStorage.getItem('theme') || 'dark';
     htmlElement.setAttribute('data-theme', currentTheme);
     updateThemeButton();
@@ -830,6 +1138,7 @@
       htmlElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       updateThemeButton();
+      showToast('Theme changed', 'success');
     });
 
     function updateThemeButton() {
@@ -837,7 +1146,9 @@
       themeToggle.classList.toggle('dark', isDark);
     }
 
-    // Scroll indicator
+    // =====================
+    // SCROLL INDICATOR
+    // =====================
     const scrollIndicator = document.getElementById('scrollIndicator');
     window.addEventListener('scroll', () => {
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -845,7 +1156,9 @@
       scrollIndicator.style.width = scrollProgress + '%';
     });
 
-    // Intersection Observer for scroll animations
+    // =====================
+    // INTERSECTION OBSERVER
+    // =====================
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -859,18 +1172,155 @@
       });
     }, observerOptions);
 
-    // Observe sections
     document.querySelectorAll('.section, .footer').forEach(section => {
       observer.observe(section);
     });
 
-    // Ripple effect on cards
-    document.querySelectorAll('.project-card, .doing-item').forEach(card => {
-      card.addEventListener('click', function(e) {
+    // =====================
+    // TOAST NOTIFICATIONS
+    // =====================
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.textContent = message;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.animation = 'fadeInUp 0.4s ease-out reverse';
+        setTimeout(() => toast.remove(), 400);
+      }, 2500);
+    }
+
+    // =====================
+    // MODAL
+    // =====================
+    const modal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+
+    function openProjectModal(project) {
+      document.getElementById('modalIcon').textContent = project.icon;
+      document.getElementById('modalTitle').textContent = project.title;
+      document.getElementById('modalSubtitle').textContent = project.subtitle;
+      document.getElementById('modalBody').textContent = project.description;
+      document.getElementById('modalGithubBtn').href = project.github;
+      modal.classList.add('active');
+    }
+
+    // =====================
+    // PROJECTS RENDERING
+    // =====================
+    function renderProjects(filter = 'All') {
+      const projectsGrid = document.getElementById('projectsGrid');
+      projectsGrid.innerHTML = '';
+
+      const filtered = filter === 'All' 
+        ? projectsData 
+        : projectsData.filter(p => p.tags.includes(filter));
+
+      filtered.forEach((project, index) => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.innerHTML = `
+          <div class="project-icon">${project.icon}</div>
+          <div class="project-content">
+            <div class="project-title">${project.title}</div>
+            <div class="project-subtitle">${project.subtitle}</div>
+            <div class="project-desc">${project.description}</div>
+            <div class="project-links">
+              <a href="${project.github}" class="project-link" target="_blank">GitHub</a>
+              <button class="project-link" onclick="openProjectModal(projectsData[${index}])">Details</button>
+            </div>
+          </div>
+        `;
+        projectsGrid.appendChild(card);
+      });
+
+      // Re-observe new cards
+      document.querySelectorAll('.project-card').forEach(card => {
+        observer.observe(card);
+      });
+    }
+
+    // =====================
+    // FILTER BUTTONS
+    // =====================
+    function renderFilterButtons() {
+      const filterContainer = document.getElementById('filterButtons');
+      const tags = ['All', ...new Set(projectsData.flatMap(p => p.tags))];
+
+      tags.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.className = `filter-btn ${tag === 'All' ? 'active' : ''}`;
+        btn.textContent = tag;
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderProjects(tag);
+          showToast(`Filtering by ${tag}`, 'info');
+        });
+        filterContainer.appendChild(btn);
+      });
+    }
+
+    renderFilterButtons();
+    renderProjects();
+
+    // =====================
+    // GITHUB STATS
+    // =====================
+    async function fetchGithubStats() {
+      try {
+        const response = await fetch('https://api.github.com/users/GiovaniRodrigo');
+        const data = await response.json();
+        const statsEl = document.getElementById('githubStats');
+        statsEl.innerHTML = `⭐ ${data.public_repos} repos · 👥 ${data.followers} followers`;
+        statsEl.style.cursor = 'pointer';
+        statsEl.addEventListener('click', () => {
+          window.open('https://github.com/GiovaniRodrigo', '_blank');
+        });
+      } catch (error) {
+        console.error('Error fetching GitHub stats:', error);
+        document.getElementById('githubStats').textContent = '📊 GitHub Stats';
+      }
+    }
+
+    fetchGithubStats();
+
+    // =====================
+    // PARALLAX EFFECT
+    // =====================
+    const hero = document.querySelector('.hero');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      hero.style.transform = `translateY(${scrollY * 0.5}px)`;
+    });
+
+    // =====================
+    // RIPPLE EFFECT
+    // =====================
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.project-card') || e.target.closest('.doing-item')) {
+        const element = e.target.closest('.project-card') || e.target.closest('.doing-item');
         const ripple = document.createElement('div');
         ripple.classList.add('ripple');
         
-        const rect = this.getBoundingClientRect();
+        const rect = element.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
         const x = e.clientX - rect.left - size / 2;
         const y = e.clientY - rect.top - size / 2;
@@ -879,56 +1329,39 @@
         ripple.style.left = x + 'px';
         ripple.style.top = y + 'px';
         
-        this.appendChild(ripple);
+        element.appendChild(ripple);
         
         setTimeout(() => ripple.remove(), 600);
-      });
+      }
     });
 
-    // Smooth scroll para links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#' && document.querySelector(href)) {
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
+    // =====================
+    // KEYBOARD SHORTCUTS
+    // =====================
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modal.classList.remove('active');
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        showToast('Search coming soon!', 'warning');
+      }
     });
 
-    // Parallax effect on hero
-    const hero = document.querySelector('.hero');
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      hero.style.transform = `translateY(${scrollY * 0.5}px)`;
+    // =====================
+    // PAGE LOAD ANIMATION
+    // =====================
+    window.addEventListener('load', () => {
+      showToast('Welcome! 👋', 'success');
     });
 
-    // Add interaction feedback
-    document.querySelectorAll('.project-link').forEach(link => {
-      link.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateX(2px)';
-      });
-      link.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateX(0)';
-      });
-    });
-
-    // Tech badges - hover delay effect
-    document.querySelectorAll('.tech-badge').forEach((badge, index) => {
-      badge.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px) rotate(2deg)';
-      });
-      badge.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) rotate(0)';
-      });
-    });
-
-    // Console easter egg
+    // =====================
+    // CONSOLE EASTER EGG
+    // =====================
     console.log('%c👋 Olá, developer!', 'font-size: 24px; font-weight: bold; color: #2c5aa0;');
     console.log('%cFique à vontade para explorar o código-fonte', 'font-size: 14px; color: #f0a000;');
     console.log('%cGitHub: github.com/GiovaniRodrigo', 'font-size: 12px; color: #b0b0b0;');
+    console.log('%cTip: Press Ctrl+K to search (coming soon)', 'font-size: 12px; color: #10b981;');
   </script>
 </body>
 </html>
