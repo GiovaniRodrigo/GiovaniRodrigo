@@ -2,12 +2,12 @@
 
 # 👋 Giovani Rodrigo
 
-**Developer & DevOps Engineer**  
-*Building automation tools, cloud solutions, and data systems*
+**Developer & DevOps Engineer**
+*Building automation tools, IDE/browser extensions, and security-focused systems*
 
 [![GitHub followers](https://img.shields.io/github/followers/GiovaniRodrigo?style=social)](https://github.com/GiovaniRodrigo)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/giovani-fernandes-3a6384138/)
-[![Portfolio](https://img.shields.io/badge/🚀%20Interactive%20Portfolio-2c5aa0?style=for-the-badge&logo=google-chrome)](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[![Portfolio](https://img.shields.io/badge/🚀%20Interactive%20Portfolio-2c5aa0?style=for-the-badge&logo=google-chrome)](https://giovanirodrigo.github.io/GiovaniRodrigo/portfolio.html)
 
 ✨ *Click the Portfolio badge above for the interactive version*
 
@@ -17,80 +17,94 @@
 
 ## 🎯 About Me
 
-I craft **production-ready** automation tools and DevOps solutions. Passionate about clean code, scalable infrastructure, and solving real problems with elegant systems.
+I craft **production-ready** automation tools, developer extensions, and DevOps solutions. Passionate about clean code, scalable infrastructure, and solving real problems with elegant systems.
 
 **Current Focus:**
-- 🔧 Building DevOps tooling and system utilities
-- ☁️ Exploring Azure integrations and cloud automation
+- 🔧 Building IDE and browser extensions for developer workflows
+- 🔐 Security-focused tooling (encrypted search, form auditing)
+- ☁️ Azure integrations and cloud automation
 - 🎓 Finishing computer science degree
 - 🤖 Semantic segmentation with machine learning
 
 **Technical Skills:**
-- **Languages:** Python • JavaScript/TypeScript • C • Shell/Bash • PHP
+- **Languages:** Python • JavaScript/TypeScript • PHP • C • Shell/Bash
 - **Tools:** Docker • Azure • Git • Linux
-- **Expertise:** DevOps • Automation • Infrastructure • Web Scraping
+- **Expertise:** DevOps • Automation • Security • Developer Tooling
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🐳 Dockerfile Generator | `gerador_dockerfile_php`
-Python tool to generate customized Dockerfiles for PHP (versions 5.6–8.2)
-- Simplifies container setup for different PHP stacks
-- Supports multiple versions automatically
-- Production-ready solution
+### 🧩 Code Review Extension | `git-codeReview-vsCode-extension`
+VS Code extension for architectural code review and PR analysis
+- Detects SOLID / Clean Architecture / DDD violations
+- Tracks quality telemetry and correction time
+- Versioned local audit log with NDJSON export
 
-[→ View on GitHub](https://github.com/GiovaniRodrigo/gerador_dockerfile_php) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
-
----
-
-### 🔗 URL Shortener | `shorter_url`
-Lightweight application for URL shortening and management
-- Fast & reliable
-- Clean API design
-- Easy integration
-
-[→ View on GitHub](https://github.com/GiovaniRodrigo/shorter_url) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[→ View on GitHub](https://github.com/GiovaniRodrigo/git-codeReview-vsCode-extension)
 
 ---
 
-### 🕷️ Web Scraping | `web_scraping`
-Data extraction and analysis from web sources
-- Robust error handling
-- Structured data export
-- Production workflows
+### 📡 Network Monitoring SaaS | `network-monitoring-saas`
+Platform for intelligent network monitoring and observability
+- Automatic device discovery and traffic analysis
+- Geolocation and anomaly detection
+- Operational dashboard for technical and corporate teams
 
-[→ View on GitHub](https://github.com/GiovaniRodrigo/web_scraping) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
-
----
-
-### ☁️ Azure Automation | `azure_tasks`
-Integration and automation tools for Azure platform
-- Seamless cloud integration
-- Task scheduling and orchestration
-- Cloud-native architecture
-
-[→ View on GitHub](https://github.com/GiovaniRodrigo/azure_tasks) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[→ View on GitHub](https://github.com/GiovaniRodrigo/network-monitoring-saas)
 
 ---
 
-### 🔐 Certificate Validation | `validar_dependencias_token_certisign`
-C utility for validating Certisign token dependencies
-- Security-focused implementation
-- Dependency tracking
-- Built in C for performance
+### 📝 Spelling Checker Library | `laravel-spelling-lib`
+PHP spell-checking library published on [Packagist](https://packagist.org/packages/giovani/spelling) as `giovani/spelling`
+- pt-BR and en-US rule checkers via Composite Pattern
+- Optional system dictionary support (Hunspell/Aspell)
+- `composer require giovani/spelling`
 
-[→ View on GitHub](https://github.com/GiovaniRodrigo/validar_dependencias_token_certisign) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[→ View on GitHub](https://github.com/GiovaniRodrigo/laravel-spelling-lib)
 
 ---
 
-### 🔧 Git Scripts | `git-scripts`
-Shell/Bash utilities to optimize Git workflows
-- Automate common operations
-- Development acceleration
-- Workflow optimization
+### 📄 Site to Markdown | `site-to-markdown`
+Browser extension that converts web pages into clean, LLM-ready Markdown
+- Fully client-side, zero external calls
+- Deduplication and token-aware chunk splitting
+- Site crawling with ZIP export
 
-[→ View on GitHub](https://github.com/GiovaniRodrigo/git-scripts) | [Details in Portfolio](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[→ View on GitHub](https://github.com/GiovaniRodrigo/site-to-markdown)
+
+---
+
+### 🧪 Form Test Auditor | `form-validator-audit`
+Manifest V3 browser extension that audits web forms automatically
+- Probes validation without submitting real data
+- Screenshots failures and exports a filterable HTML/JSON report
+- Heuristics for Filament, Livewire, React, Vue, Angular, and more
+
+[→ View on GitHub](https://github.com/GiovaniRodrigo/form-validator-audit)
+
+---
+
+### 🔐 Blind Index Performance | `efficiency-algorithm-blind-index`
+Python benchmark for searchable-encryption strategies
+- Compares HMAC-based blind indexes (O(log n)) vs. full decryption scans (O(n))
+- Generates visual performance comparisons
+
+[→ View on GitHub](https://github.com/GiovaniRodrigo/efficiency-algorithm-blind-index)
+
+---
+
+<details>
+<summary><strong>More projects</strong> — Dockerfile Generator, Azure Automation, Certificate Validation, Git Scripts</summary>
+
+- **[Dockerfile Generator](https://github.com/GiovaniRodrigo/gerador_dockefile_php)** — Python tool generating customized Dockerfiles for PHP 5.6–8.2
+- **[Azure Automation](https://github.com/GiovaniRodrigo/azure_tasks)** — Task scheduling and automation tools for Azure
+- **[Certificate Validation](https://github.com/GiovaniRodrigo/validar_dependecias_token_certisign)** — C utility for validating Certisign token dependencies
+- **[Git Scripts](https://github.com/GiovaniRodrigo/git-scripts)** — Shell/Bash utilities to optimize Git workflows
+
+</details>
+
+**→ [See all projects with live filters and details in the interactive portfolio](https://giovanirodrigo.github.io/GiovaniRodrigo/portfolio.html)**
 
 ---
 
@@ -100,9 +114,9 @@ Shell/Bash utilities to optimize Git workflows
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 ### Tools & Platforms
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -114,10 +128,9 @@ Shell/Bash utilities to optimize Git workflows
 
 ## 🌐 Interactive Portfolio
 
-### Open the Full Experience
 <div align="center">
 
-[![Portfolio Button](https://img.shields.io/badge/🎨%20Click%20Here%20For%20Interactive%20Portfolio%20→-2c5aa0?style=for-the-badge)](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
+[![Portfolio Button](https://img.shields.io/badge/🎨%20Click%20Here%20For%20Interactive%20Portfolio%20→-2c5aa0?style=for-the-badge)](https://giovanirodrigo.github.io/GiovaniRodrigo/portfolio.html)
 
 **No installation required • Works offline • Fully responsive**
 
@@ -128,12 +141,11 @@ Shell/Bash utilities to optimize Git workflows
 | Feature | Description |
 |---------|-------------|
 | 🎨 **Dark/Light Theme** | Toggle between themes with localStorage persistence |
-| 🔍 **Project Filters** | Filter projects by technology (Python, Docker, Azure, etc) |
+| 🔍 **Project Filters** | Filter projects by technology (Python, PHP, Security, etc) |
 | 📊 **Live GitHub Stats** | Real-time stats from GitHub API |
 | 🎯 **Modal Details** | Click any project to see full information |
 | 💫 **Smooth Animations** | Scroll animations, ripple effects, transitions |
 | 📱 **Fully Responsive** | Perfect on mobile, tablet, and desktop |
-| ⌨️ **Keyboard Shortcuts** | ESC to close, Ctrl+K for search hint |
 | ⚡ **Fast & Lightweight** | Vanilla JavaScript, zero dependencies |
 
 ---
@@ -152,68 +164,35 @@ Shell/Bash utilities to optimize Git workflows
 
 ## 🛠️ How I Work
 
-**Problem Solver**  
+**Problem Solver**
 Focus on practical solutions that scale and solve real problems
 
-**Clean Code**  
+**Clean Code**
 Readable, maintainable, and well-documented code is paramount
 
-**DevOps First**  
+**DevOps First**
 Infrastructure as code and automation over manual work
 
-**Always Learning**  
+**Always Learning**
 Continuously exploring new tools and technologies
 
 ---
 
-## 🎯 Current Projects & Learning
+## 📥 How to Deploy Your Own Portfolio
 
-- 🚀 Expanding DevOps tooling and system utilities
-- ☁️ Deepening Azure and cloud services expertise
-- 🐍 Mastering Python for infrastructure automation
-- 🤖 Exploring semantic segmentation with ML/CV
-- 📚 Completing computer science degree
-
----
-
-## 🎨 Portfolio Technology
-
-This interactive portfolio is built with:
-
-```
-HTML5           — Semantic, accessible markup
-CSS3            — Variables, Grid, Flexbox, animations
-Vanilla JS      — ES6+, no frameworks or dependencies
-GitHub API      — Real-time statistics
-Offline Ready   — Works completely offline
-```
-
-**Result:** Fast, lightweight, customizable, production-ready
-
----
-
-## 📥 How to Deploy Your Own
-
-### Option 1: GitHub Pages (Recommended)
+### GitHub Pages
 ```bash
-1. Upload portfolio-ultra.html to your repo
+1. Fork this repo (or copy portfolio.html into your own)
 2. Go to Settings → Pages
 3. Select main branch as source
-4. Access at: https://YOUR-USERNAME.github.io/REPO/portfolio-ultra.html
+4. Access at: https://YOUR-USERNAME.github.io/YOUR-REPO/portfolio.html
 ```
 
-### Option 2: Local Use
+### Local Use
 ```bash
-1. Download portfolio-ultra.html
+1. Download portfolio.html
 2. Double-click to open in browser
 3. No installation required!
-```
-
-### Option 3: Self-Hosted
-```bash
-1. Upload portfolio-ultra.html to your server
-2. Access via your domain
-3. All features work perfectly
 ```
 
 ---
@@ -224,7 +203,7 @@ Offline Ready   — Works completely offline
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/GiovaniRodrigo)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/giovani-fernandes-3a6384138/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:giovani@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:giovanif245@gmail.com)
 
 Let's connect and build something amazing together!
 
@@ -236,7 +215,6 @@ Let's connect and build something amazing together!
 
 ![Visitors](https://komarev.com/ghpvc/?username=GiovaniRodrigo&style=flat-square&color=2c5aa0)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Updated](https://img.shields.io/badge/Last%20Updated-2026-blue?style=flat-square)
 
 ---
 
