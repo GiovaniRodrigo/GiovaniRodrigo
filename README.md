@@ -220,8 +220,6 @@ Let's connect and build something amazing together!
 
 <div align="center">
 
-**Made with ❤️ in Natal, RN, Brazil**
-
 © 2026 Giovani Rodrigo • All rights reserved
 
 [⬆ Back to top](#-giovani-rodrigo)
