@@ -9,7 +9,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/giovani-fernandes-3a6384138/)
 [![Portfolio](https://img.shields.io/badge/🚀%20Interactive%20Portfolio-2c5aa0?style=for-the-badge&logo=google-chrome)](https://giovanirodigo.github.io/GiovaniRodrigo/portfolio-ultra.html)
 
-📍 Natal, RN, Brazil  
 ✨ *Click the Portfolio badge above for the interactive version*
 
 </div>
