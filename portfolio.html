@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giovani Rodrigo - Developer & DevOps</title>
+  <meta name="description" content="Giovani Rodrigo — Developer & DevOps Engineer building automation tools, IDE/browser extensions, and security-focused systems. Based in Natal, RN, Brazil.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Giovani Rodrigo — Developer & DevOps Engineer">
+  <meta property="og:description" content="Automation tools, IDE/browser extensions, and security-focused engineering. Explore the projects.">
+  <meta property="og:url" content="https://giovanirodrigo.github.io/GiovaniRodrigo/portfolio.html">
+  <meta property="og:image" content="https://github.com/GiovaniRodrigo.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232c5aa0'/%3E%3Ctext x='50' y='67' font-size='52' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EGR%3C/text%3E%3C/svg%3E">
   <style>
     * {
       margin: 0;
@@ -1016,7 +1024,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Giovani Rodrigo</h1>
-        <p>Developer building automation tools, DevOps solutions, and data extraction systems.</p>
+        <p>Developer building automation tools, IDE/browser extensions, and security-focused systems — with a DevOps and cloud automation backbone.</p>
         <p class="tagline">📍 Based in Natal, RN, Brazil</p>
       </div>
     </section>
@@ -1028,10 +1036,10 @@
           <p><span class="doing-label">Focus:</span> Python, Shell scripting, and infrastructure automation</p>
         </div>
         <div class="doing-item">
-          <p><span class="doing-label">Interests:</span> Docker containerization, web scraping, Azure integrations</p>
+          <p><span class="doing-label">Building:</span> Developer tooling — VS Code extensions, browser extensions, and PHP packages</p>
         </div>
         <div class="doing-item">
-          <p><span class="doing-label">Currently:</span> Expanding DevOps tooling and system utilities</p>
+          <p><span class="doing-label">Currently:</span> Finishing my Computer Science degree while exploring semantic segmentation with ML</p>
         </div>
       </div>
     </section>
@@ -1063,6 +1071,7 @@
       <div class="footer-links">
         <a href="https://github.com/GiovaniRodrigo">GitHub</a>
         <a href="https://www.linkedin.com/in/giovani-fernandes-3a6384138/">LinkedIn</a>
+        <a href="mailto:giovanif245@gmail.com">Email</a>
       </div>
       <p>© 2026 Giovani Rodrigo. All rights reserved.</p>
     </footer>
@@ -1074,50 +1083,82 @@
     // =====================
     const projectsData = [
       {
+        icon: '🧩',
+        title: 'Code Review Extension',
+        subtitle: 'git-codeReview-vsCode-extension',
+        description: 'VS Code extension for architectural code review and PR analysis — detects SOLID/Clean Architecture/DDD violations, tracks quality telemetry, and keeps a versioned local audit log.',
+        github: 'https://github.com/GiovaniRodrigo/git-codeReview-vsCode-extension',
+        tags: ['JavaScript', 'VS Code Extension']
+      },
+      {
+        icon: '📡',
+        title: 'Network Monitoring SaaS',
+        subtitle: 'network-monitoring-saas',
+        description: 'SaaS platform for network monitoring: automatic device discovery, traffic analysis, geolocation, anomaly detection, and an operational dashboard.',
+        github: 'https://github.com/GiovaniRodrigo/network-monitoring-saas',
+        tags: ['SaaS']
+      },
+      {
+        icon: '📝',
+        title: 'Spelling Checker Library',
+        subtitle: 'giovani/spelling · Packagist',
+        description: 'PHP spell-checking library published on Packagist, with a Composite Pattern for chaining pt-BR and en-US rule checkers, system dictionaries, and correction suggestions.',
+        github: 'https://github.com/GiovaniRodrigo/laravel-spelling-lib',
+        tags: ['PHP']
+      },
+      {
+        icon: '📄',
+        title: 'Site to Markdown',
+        subtitle: 'site-to-markdown',
+        description: 'Browser extension that converts web pages into clean, LLM-ready Markdown — runs entirely client-side, with deduplication and token-aware splitting.',
+        github: 'https://github.com/GiovaniRodrigo/site-to-markdown',
+        tags: ['JavaScript', 'Browser Extension']
+      },
+      {
+        icon: '🧪',
+        title: 'Form Test Auditor',
+        subtitle: 'form-validator-audit',
+        description: 'Manifest V3 browser extension that audits web forms automatically — probing validation without submitting, capturing screenshots on errors, and exporting a filterable HTML/JSON report.',
+        github: 'https://github.com/GiovaniRodrigo/form-validator-audit',
+        tags: ['JavaScript', 'Browser Extension']
+      },
+      {
+        icon: '🔐',
+        title: 'Blind Index Performance',
+        subtitle: 'efficiency-algorithm-blind-index',
+        description: 'Python benchmark comparing searchable-encryption strategies — HMAC-based blind indexes (O(log n)) versus full-table decryption scans (O(n)).',
+        github: 'https://github.com/GiovaniRodrigo/efficiency-algorithm-blind-index',
+        tags: ['Python', 'Security']
+      },
+      {
+        icon: '🔏',
+        title: 'Certificate Validation',
+        subtitle: 'validar_dependecias_token_certisign',
+        description: 'C utility for validating Certisign token dependencies and certificate requirements.',
+        github: 'https://github.com/GiovaniRodrigo/validar_dependecias_token_certisign',
+        tags: ['C', 'Security']
+      },
+      {
         icon: '🐳',
         title: 'Dockerfile Generator',
-        subtitle: 'gerador_dockerfile_php',
-        description: 'Python tool to generate customized Dockerfiles for PHP (versions 5.6–8.2). Simplifies container setup for different PHP stacks.',
-        github: 'https://github.com/GiovaniRodrigo/gerador_dockerfile_php',
+        subtitle: 'gerador_dockefile_php',
+        description: 'Python tool that generates customized Dockerfiles for PHP 5.6–8.2, simplifying container setup across different stacks.',
+        github: 'https://github.com/GiovaniRodrigo/gerador_dockefile_php',
         tags: ['Python', 'Docker']
-      },
-      {
-        icon: '🔗',
-        title: 'URL Shortener',
-        subtitle: 'shorter_url',
-        description: 'Lightweight application for URL shortening and management. Fast, reliable, and easy to integrate.',
-        github: 'https://github.com/GiovaniRodrigo/shorter_url',
-        tags: ['JavaScript']
-      },
-      {
-        icon: '🕷️',
-        title: 'Web Scraping',
-        subtitle: 'web_scraping',
-        description: 'Data extraction and analysis from web sources. Built for reliable scraping workflows with error handling.',
-        github: 'https://github.com/GiovaniRodrigo/web_scraping',
-        tags: ['Python']
       },
       {
         icon: '☁️',
         title: 'Azure Automation',
         subtitle: 'azure_tasks',
-        description: 'Integration and automation tools for Azure platform. Task scheduling and cloud operations made simple.',
+        description: 'Integration and automation tools for the Azure platform, covering task scheduling and cloud operations.',
         github: 'https://github.com/GiovaniRodrigo/azure_tasks',
         tags: ['Python', 'Azure']
-      },
-      {
-        icon: '🔐',
-        title: 'Certificate Validation',
-        subtitle: 'validar_dependencias_token_certisign',
-        description: 'C utility for validating Certisign token dependencies and certificate requirements. Security-focused.',
-        github: 'https://github.com/GiovaniRodrigo/validar_dependencias_token_certisign',
-        tags: ['C']
       },
       {
         icon: '🔧',
         title: 'Git Scripts',
         subtitle: 'git-scripts',
-        description: 'Shell/Bash utilities to optimize Git workflows. Automate common operations and improve development speed.',
+        description: 'Shell/Bash utilities that automate common Git operations to speed up everyday development workflows.',
         github: 'https://github.com/GiovaniRodrigo/git-scripts',
         tags: ['Shell/Bash']
       }
