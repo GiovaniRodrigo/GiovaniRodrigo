@@ -1,0 +1,11 @@
+{
+  "title": "self-rated skills",
+  "axes": [
+    { "label": "DevOps & Automation", "value": 85 },
+    { "label": "Backend", "value": 80 },
+    { "label": "Frontend", "value": 60 },
+    { "label": "AI / Agents", "value": 80 },
+    { "label": "Testing & QA", "value": 70 },
+    { "label": "Architecture", "value": 75 }
+  ]
+}

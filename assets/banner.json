@@ -1,0 +1,10 @@
+{
+  "prompt": "$ ./profile.sh --live",
+  "lines": [
+    { "key": "name", "value": "Giovani Rodrigo" },
+    { "key": "role", "value": "DevOps & Full-Stack Engineer" },
+    { "key": "location", "value": "Sao Paulo, Brazil" },
+    { "key": "focus", "value": "automation · containers · AI agents" },
+    { "key": "stack", "value": "python · typescript · docker · kafka" }
+  ]
+}
