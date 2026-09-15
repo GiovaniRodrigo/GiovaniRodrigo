@@ -1,0 +1,70 @@
+name: Profile assets
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, keeps stats fresh
+  push:
+    branches: [main]
+    paths:
+      - "assets/*.json"
+      - "scripts/**"
+      - ".github/workflows/profile-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --quiet pytest
+      - run: python -m pytest -q
+
+  generate:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate SVG assets
+        env:
+          # Uses the repo's own token for API rate limits. Set METRICS_TOKEN as a
+          # secret (a PAT) if you want higher limits or private data.
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN || github.token }}
+        run: python scripts/generate.py
+
+      # Optional richer language card via lowlighter/metrics. Runs only when a
+      # METRICS_TOKEN secret is present; otherwise it's skipped and the committed
+      # languages-*.svg remains the source of truth.
+      - name: Detailed language metrics
+        if: ${{ secrets.METRICS_TOKEN != '' }}
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: GiovaniRodrigo
+          filename: assets/metrics.languages.svg
+          base: ""
+          plugin_languages: yes
+          plugin_languages_details: bytes-size
+          plugin_languages_limit: 8
+          config_display: large
+
+      - name: Commit regenerated assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+          else
+            git commit -m "chore(assets): regenerate profile SVGs [skip ci]"
+            git push
+          fi

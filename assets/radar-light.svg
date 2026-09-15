@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 400" width="460" height="400" role="img" aria-label="self-rated skills" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+<rect width="460" height="400" rx="14" fill="#ffffff"/>
+<text x="230" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#0891b2" letter-spacing="1">self-rated skills</text>
+<polygon points="230,171.25 259.23,188.12 259.23,221.88 230,238.75 200.77,221.88 200.77,188.12" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<polygon points="230,137.5 288.46,171.25 288.46,238.75 230,272.5 171.54,238.75 171.54,171.25" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<polygon points="230,103.75 317.69,154.38 317.69,255.62 230,306.25 142.31,255.62 142.31,154.38" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<polygon points="230,70 346.91,137.5 346.91,272.5 230,340 113.09,272.5 113.09,137.5" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<line x1="230" y1="205" x2="230" y2="70" stroke="#d0d7de" stroke-width="1"/>
+<text x="230" y="54" text-anchor="middle" font-size="11" fill="#57606a">DevOps &amp; Automation</text>
+<line x1="230" y1="205" x2="346.91" y2="137.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="364.23" y="131.5" text-anchor="start" font-size="11" fill="#57606a">Backend</text>
+<line x1="230" y1="205" x2="346.91" y2="272.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="364.23" y="286.5" text-anchor="start" font-size="11" fill="#57606a">Frontend</text>
+<line x1="230" y1="205" x2="230" y2="340" stroke="#d0d7de" stroke-width="1"/>
+<text x="230" y="364" text-anchor="middle" font-size="11" fill="#57606a">AI / Agents</text>
+<line x1="230" y1="205" x2="113.09" y2="272.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="95.77" y="286.5" text-anchor="end" font-size="11" fill="#57606a">Testing &amp; QA</text>
+<line x1="230" y1="205" x2="113.09" y2="137.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="95.77" y="131.5" text-anchor="end" font-size="11" fill="#57606a">Architecture</text>
+<polygon points="230,90.25 323.53,151 300.15,245.5 230,313 148.16,252.25 142.31,154.38" fill="#0891b21f" stroke="#0891b2" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="230" cy="90.25" r="3.2" fill="#0891b2"/>
+<circle cx="323.53" cy="151" r="3.2" fill="#0891b2"/>
+<circle cx="300.15" cy="245.5" r="3.2" fill="#0891b2"/>
+<circle cx="230" cy="313" r="3.2" fill="#0891b2"/>
+<circle cx="148.16" cy="252.25" r="3.2" fill="#0891b2"/>
+<circle cx="142.31" cy="154.38" r="3.2" fill="#0891b2"/>
+</svg>
