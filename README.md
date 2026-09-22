@@ -11,7 +11,7 @@
 
 <!-- NAME / TAGLINE — animated typing -->
 <a href="https://github.com/GiovaniRodrigo">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=00E5FF&center=true&vCenter=true&width=820&lines=Giovani+Rodrigo+%E2%80%94+DevOps+%26+Full-Stack+Engineer;Automation+%C2%B7+Docker+%C2%B7+CI%2FCD+%C2%B7+AI+coding+agents;Python+%C2%B7+TypeScript+%C2%B7+Building+from+S%C3%A3o+Paulo" alt="typing tagline">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=00E5FF&center=true&vCenter=true&width=820&lines=Giovani+Rodrigo+%E2%80%94+DevOps+%26+Full-Stack+Engineer;Laravel+%C2%B7+PHP+%C2%B7+TypeScript+%C2%B7+Python+%C2%B7+Docker;AI+Agent+Harnesses+%C2%B7+Distributed+Systems+%C2%B7+S%C3%A3o+Paulo" alt="typing tagline">
 </a>
 
 <br>
@@ -32,8 +32,9 @@
 
 ## `whoami`
 
-DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I architect distributed systems, resilient cloud infrastructure, and **AI agent harnesses & quality governance platforms** that turn autonomous models into deterministic, verifiable components in production software.
+DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I architect distributed systems, modern **PHP & Laravel** back-ends, resilient cloud infrastructure, and **AI agent harnesses & quality governance platforms** that turn autonomous models into deterministic, verifiable components in production software.
 
+- 🐘 **PHP & Laravel Architecture** — Enterprise PHP 8.1+ and Laravel service design, domain logic, custom Composer libraries published on Packagist ([laravel-spelling-lib](https://github.com/GiovaniRodrigo/laravel-spelling-lib)), and automated multi-version PHP container environments ([gerador_dockefile_php](https://github.com/GiovaniRodrigo/gerador_dockefile_php)).
 - 🧠 **AI Agent Harnesses & Quality Governance** — Sandboxed execution loops, MCP (Model Context Protocol) routing gateways, deterministic AST analysis, and policy-driven quality gates ([QualityGuard](https://github.com/GiovaniRodrigo/qualityguard), [harness-code-agent](https://github.com/GiovaniRodrigo/harness-code-agent), [software-quality-ai-harness](https://github.com/GiovaniRodrigo/software-quality-ai-harness)).
 - ⚡ **Distributed Systems & Event-Driven Architecture** — **MACH** low-code platforms with hybrid Go/Elixir gRPC contracts & Protocol Buffers ([arquitetura-mach-saas-nocode](https://github.com/GiovaniRodrigo/arquitetura-mach-saas-nocode)), plus Apache Kafka pub/sub order fulfillment pipelines ([order-processing-hub](https://github.com/GiovaniRodrigo/order-processing-hub)).
 - 🔧 **DevOps, Security & Cloud Plumbing** — Production Docker Compose workflows, GitHub Actions CI/CD gates, cryptographic blind indexes for encrypted data at rest ($O(\log n)$ query complexity), and low-level PKI/security validation.
@@ -43,7 +44,7 @@ DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I archite
 
 ## my stack
 
-<img src="https://skillicons.dev/icons?i=ts,py,go,elixir,js,php,c,docker,kafka,postgres,bash,linux,azure,git,github&perline=8" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=php,laravel,ts,py,go,elixir,js,c,docker,kafka,postgres,bash,linux,azure,git,github&perline=8" alt="tech stack">
 
 </div>
 
@@ -105,6 +106,10 @@ DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I archite
 
 > Ranked by complexity. Accent colour tracks it: <img src="https://img.shields.io/badge/flagship-00E5FF?style=flat-square" alt="flagship"> → <img src="https://img.shields.io/badge/advanced-39FF14?style=flat-square" alt="advanced"> → <img src="https://img.shields.io/badge/solid-FFB000?style=flat-square" alt="solid">.
 
+### [laravel-spelling-lib](https://github.com/GiovaniRodrigo/laravel-spelling-lib) <img src="https://img.shields.io/badge/flagship-00E5FF?style=flat-square" alt="flagship">
+Production **PHP & Laravel spell-checking library** ([`giovani/spelling` on Packagist](https://packagist.org/packages/giovani/spelling)) — engineered with the **Composite Design Pattern**, strict PHP 8.1+ typing, Doctrine Inflector and system dictionaries (`ext-enchant`) for Brazilian Portuguese (pt_BR) and American English (en_US), fully covered by PHPUnit test suites.
+<br><img src="https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php&logoColor=white" alt="PHP 8.1+"> <img src="https://img.shields.io/badge/Laravel%20%2F%20Composer-FF2D20?logo=laravel&logoColor=white" alt="Laravel / Composer"> <img src="https://img.shields.io/badge/Packagist-F28D1A?logo=packagist&logoColor=white" alt="Packagist"> <img src="https://img.shields.io/badge/PHPUnit-3C9CD7?logo=phpunit&logoColor=white" alt="PHPUnit"> <img src="https://img.shields.io/badge/Composite%20Pattern-00E5FF" alt="Composite Pattern">
+
 ### [qualityguard](https://github.com/GiovaniRodrigo/qualityguard) <img src="https://img.shields.io/badge/flagship-00E5FF?style=flat-square" alt="flagship">
 AI-powered **software quality & architecture governance** layer for engineering teams shipping with AI — deterministic AST/metric analysis, architecture intelligence and executable quality gates.
 <br><img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Architecture-00E5FF" alt="Architecture">
@@ -134,18 +139,17 @@ A **policy-driven evidence & context harness** for AI-assisted software engineer
 <br><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Quality%20gates-2DD4BF" alt="Quality gates">
 
 <details>
-<summary><b>More projects</b> (13 more public repositories)</summary>
+<summary><b>More projects</b> (12 more public repositories)</summary>
 
 <br>
 
 | Project | What it is | Tech |
 |---|---|---|
 | [efficiency-algorithm-blind-index](https://github.com/GiovaniRodrigo/efficiency-algorithm-blind-index) | Benchmarks the performance impact of **blind indexes** on searchable encrypted databases (CPF, emails, names encrypted at rest but still queryable). | Python |
-| [laravel-spelling-lib](https://github.com/GiovaniRodrigo/laravel-spelling-lib) | PHP **spell-checking library** (Composite Pattern), pt_BR + en_US — published on Packagist. | PHP |
+| [gerador_dockefile_php](https://github.com/GiovaniRodrigo/gerador_dockefile_php) | Automated **PHP Dockerfile generator** with selectable extensions and multi-version PHP support (PHP 8.x/7.x). | PHP · Docker · Python |
 | [site-to-markdown](https://github.com/GiovaniRodrigo/site-to-markdown) | *GF Code* browser extension (Manifest V3) that converts web pages to clean **Markdown**. | JavaScript |
 | [form-validator-audit](https://github.com/GiovaniRodrigo/form-validator-audit) | *Form Test Auditor* — cross-browser WebExtension (MV3) that crawls same-domain URLs, discovers forms/fields and tests valid & invalid inputs. | JavaScript |
 | [mpc-server-list](https://github.com/GiovaniRodrigo/mpc-server-list) | **MCP** server catalog + dynamic routing engine — a gateway abstracting init/communication/execution of Model Context Protocol tools. | Python · HTML |
-| [gerador_dockefile_php](https://github.com/GiovaniRodrigo/gerador_dockefile_php) | Generates customised **PHP Dockerfiles** with selectable extensions per PHP version. | Python · Docker |
 | [git-scripts](https://github.com/GiovaniRodrigo/git-scripts) | Git aliases for safe, automated **branch management** (local + cloud) with backup. | Shell |
 | [validar_dependecias_token_certisign](https://github.com/GiovaniRodrigo/validar_dependecias_token_certisign) | Windows/Linux scripts that validate the dependencies for **A3 digital certificates** (Certisign tokens). | C |
 | [vegetation-mapping](https://github.com/GiovaniRodrigo/vegetation-mapping) | Computer vision model and data pipeline for **vegetation mapping** and analysis. | Python |

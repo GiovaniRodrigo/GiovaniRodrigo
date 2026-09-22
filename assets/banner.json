@@ -4,7 +4,7 @@
     { "key": "name", "value": "Giovani Rodrigo" },
     { "key": "role", "value": "DevOps & Full-Stack Engineer" },
     { "key": "location", "value": "Sao Paulo, Brazil" },
-    { "key": "focus", "value": "AI agent harnesses · EDA & MACH · automation" },
-    { "key": "stack", "value": "typescript · python · go · docker · kafka" }
+    { "key": "focus", "value": "PHP & Laravel · AI agents · EDA · DevOps" },
+    { "key": "stack", "value": "php / laravel · typescript · python · docker · kafka" }
   ]
 }
