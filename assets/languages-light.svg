@@ -3,23 +3,23 @@
 <text x="24" y="38" font-size="15" font-weight="700" fill="#0891b2">most used languages</text>
 <clipPath id="barclip"><rect x="24" y="60" width="432" height="18" rx="9.0"/></clipPath>
 <g clip-path="url(#barclip)">
-<rect x="24.00" y="60" width="100.29" height="18" fill="#3572A5"/>
-<rect x="123.69" y="60" width="94.75" height="18" fill="#3178c6"/>
-<rect x="217.85" y="60" width="83.68" height="18" fill="#f1e05a"/>
-<rect x="300.92" y="60" width="61.52" height="18" fill="#4F5D95"/>
-<rect x="361.85" y="60" width="44.91" height="18" fill="#00ADD8"/>
-<rect x="406.15" y="60" width="50.45" height="18" fill="#89e051"/>
+<rect x="24.00" y="60" width="96.04" height="18" fill="#3178c6"/>
+<rect x="119.44" y="60" width="86.00" height="18" fill="#3572A5"/>
+<rect x="204.84" y="60" width="75.95" height="18" fill="#f1e05a"/>
+<rect x="280.19" y="60" width="70.93" height="18" fill="#00ADD8"/>
+<rect x="350.51" y="60" width="60.88" height="18" fill="#89e051"/>
+<rect x="410.79" y="60" width="45.81" height="18" fill="#4F5D95"/>
 </g>
-<circle cx="29" cy="104" r="5.5" fill="#3572A5"/>
-<text x="41" y="108" font-size="12" fill="#24292f">Python <tspan fill="#57606a">23%</tspan></text>
-<circle cx="179" cy="104" r="5.5" fill="#3178c6"/>
-<text x="191" y="108" font-size="12" fill="#24292f">TypeScript <tspan fill="#57606a">22%</tspan></text>
+<circle cx="29" cy="104" r="5.5" fill="#3178c6"/>
+<text x="41" y="108" font-size="12" fill="#24292f">TypeScript <tspan fill="#57606a">22%</tspan></text>
+<circle cx="179" cy="104" r="5.5" fill="#3572A5"/>
+<text x="191" y="108" font-size="12" fill="#24292f">Python <tspan fill="#57606a">20%</tspan></text>
 <circle cx="329" cy="104" r="5.5" fill="#f1e05a"/>
-<text x="341" y="108" font-size="12" fill="#24292f">JavaScript <tspan fill="#57606a">19%</tspan></text>
-<circle cx="29" cy="130" r="5.5" fill="#4F5D95"/>
-<text x="41" y="134" font-size="12" fill="#24292f">PHP <tspan fill="#57606a">14%</tspan></text>
-<circle cx="179" cy="130" r="5.5" fill="#00ADD8"/>
-<text x="191" y="134" font-size="12" fill="#24292f">Go <tspan fill="#57606a">10%</tspan></text>
-<circle cx="329" cy="130" r="5.5" fill="#89e051"/>
-<text x="341" y="134" font-size="12" fill="#24292f">Shell <tspan fill="#57606a">12%</tspan></text>
+<text x="341" y="108" font-size="12" fill="#24292f">JavaScript <tspan fill="#57606a">17%</tspan></text>
+<circle cx="29" cy="130" r="5.5" fill="#00ADD8"/>
+<text x="41" y="134" font-size="12" fill="#24292f">Go <tspan fill="#57606a">16%</tspan></text>
+<circle cx="179" cy="130" r="5.5" fill="#89e051"/>
+<text x="191" y="134" font-size="12" fill="#24292f">Shell <tspan fill="#57606a">14%</tspan></text>
+<circle cx="329" cy="130" r="5.5" fill="#4F5D95"/>
+<text x="341" y="134" font-size="12" fill="#24292f">PHP <tspan fill="#57606a">10%</tspan></text>
 </svg>
