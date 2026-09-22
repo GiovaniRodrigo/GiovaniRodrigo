@@ -164,7 +164,7 @@ A **policy-driven evidence & context harness** for AI-assisted software engineer
 
 ## 💡 Open to
 
-**DevOps** · **Backend** · **Full-Stack** · freelance/contract (Python, Docker, automation, AI agents). Reach out on [LinkedIn](https://www.linkedin.com/in/giovanirodrigo/) or by [email](mailto:giovanif245@gmail.com).
+**Software Engineer** | Laravel • Filament • Node.js • TypeScript • Kafka • PostgreSQL • Docker. Reach out on [LinkedIn](https://www.linkedin.com/in/giovanirodrigo/) or by [email](mailto:giovanif245@gmail.com).
 
 <div align="center">
 <sub>📖 How this profile is built: <a href="docs/HOW-IT-WORKS.md">English</a> · <a href="docs/HOW-IT-WORKS.pt-BR.md">Português</a></sub>
