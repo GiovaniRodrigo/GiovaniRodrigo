@@ -32,21 +32,18 @@
 
 ## `whoami`
 
-DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I build the plumbing that
-ships and runs software — automation, containers, CI/CD — and lately I'm deep into
-**AI coding agents**: harnesses that give an LLM context, tools, state, limits and
-verifiable feedback so it behaves like a component in a real system, not a magic box.
+DevOps & Full-Stack Engineer based in **São Paulo, Brazil** 🇧🇷. I architect distributed systems, resilient cloud infrastructure, and **AI agent harnesses & quality governance platforms** that turn autonomous models into deterministic, verifiable components in production software.
 
-- 🔧 **DevOps & automation** — Docker, GitHub Actions, CI/CD, shell tooling.
-- 🧠 **AI-assisted engineering** — coding-agent harnesses, MCP routing, policy-driven quality gates.
-- 🧩 **Full-stack** — TypeScript/Vue front-ends, Python & PHP back-ends, event-driven services.
-- 🌱 Always shipping real things and sharpening the craft.
+- 🧠 **AI Agent Harnesses & Quality Governance** — Sandboxed execution loops, MCP (Model Context Protocol) routing gateways, deterministic AST analysis, and policy-driven quality gates ([QualityGuard](https://github.com/GiovaniRodrigo/qualityguard), [harness-code-agent](https://github.com/GiovaniRodrigo/harness-code-agent), [software-quality-ai-harness](https://github.com/GiovaniRodrigo/software-quality-ai-harness)).
+- ⚡ **Distributed Systems & Event-Driven Architecture** — **MACH** low-code platforms with hybrid Go/Elixir gRPC contracts & Protocol Buffers ([arquitetura-mach-saas-nocode](https://github.com/GiovaniRodrigo/arquitetura-mach-saas-nocode)), plus Apache Kafka pub/sub order fulfillment pipelines ([order-processing-hub](https://github.com/GiovaniRodrigo/order-processing-hub)).
+- 🔧 **DevOps, Security & Cloud Plumbing** — Production Docker Compose workflows, GitHub Actions CI/CD gates, cryptographic blind indexes for encrypted data at rest ($O(\log n)$ query complexity), and low-level PKI/security validation.
+- 🧩 **Full-Stack & Developer Tooling** — VS Code architectural telemetry extensions detecting SOLID / Clean Architecture / DDD violations ([git-codeReview-vsCode-extension](https://github.com/GiovaniRodrigo/git-codeReview-vsCode-extension)), WebExtensions (MV3), TypeScript, Python, and Go microservices.
 
 <div align="center">
 
 ## my stack
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,php,go,c,vue,bash,docker,kafka,git,github,linux,azure&perline=7" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=ts,py,go,elixir,js,php,c,docker,kafka,postgres,bash,linux,azure,git,github&perline=8" alt="tech stack">
 
 </div>
 
